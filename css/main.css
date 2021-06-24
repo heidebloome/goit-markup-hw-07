@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --heading-text-color: #212121;
   --main-text-color: #757575;
@@ -20,6 +21,17 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
   --modal-input-border-color: rgba(33, 33, 33, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .link {
@@ -50,6 +62,13 @@ img {
   height: auto;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -69,6 +88,28 @@ img {
 .thumb {
   position: relative;
   overflow: hidden;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.nav__logo {
+  display: block;
+  margin-right: 93px;
+}
+
+.nav__logo--black {
+  color: var(--black-color);
 }
 
 .hero__button, .subscribe__button {
@@ -150,6 +191,83 @@ img {
 .team-members .social-list__link:hover, .team-members .social-list__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list,
+.header .contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.nav__item:not(:last-child),
+.header .contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link,
+.header .contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  /* нижний padding 31 пиксель, потому что 1 пиксель занял border-bottom у хедера */
+}
+
+.nav__link {
+  color: var(--heading-text-color);
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link--current::after {
+  position: absolute;
+  bottom: -1px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-color: var(--accent-color);
+}
+
+.header .link {
+  transition: color var(--time) var(--cubic);
+}
+
+.nav__link--current,
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__icon {
+  margin-right: 10px;
 }
 
 .hero {
