@@ -34,12 +34,13 @@
   overflow: hidden;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
 }
 
-.list {
+ul,
+ol {
   list-style: none;
   padding-left: 0;
 }
@@ -51,7 +52,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -100,25 +102,29 @@ body {
   font-size: 26px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
+}
+
+.logo--accent-color {
   color: var(--accent-color);
 }
 
 .nav__logo {
+  color: var(--black-color);
   display: block;
   margin-right: 93px;
 }
 
-.nav__logo--black {
-  color: var(--black-color);
+.footer__logo {
+  color: var(--white-color);
 }
 
 .hero__button, .subscribe__button, .portfolio-buttons__button {
-  border-radius: 4px;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-radius: 4px;
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;

@@ -5,14 +5,17 @@
   line-height: 1.1923;
   letter-spacing: 0.03em;
 
-  color: var(--accent-color);
+  &--accent-color {
+    color: var(--accent-color);
+  }
 }
 
 .nav__logo {
+  color: var(--black-color);
   display: block;
   margin-right: 93px;
 }
 
-.nav__logo--black {
-  color: var(--black-color);
+.footer__logo {
+  color: var(--white-color);
 }
