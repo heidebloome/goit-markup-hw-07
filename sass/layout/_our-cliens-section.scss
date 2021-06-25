@@ -1,8 +1,8 @@
-.our-clients__list {
+.our-clients-list {
   display: flex;
 }
 
-.our-clients__item {
+.our-clients-list__item {
   flex-basis: calc((100% - 150px) / 6);
   height: 92px;
 
@@ -11,10 +11,9 @@
   }
 }
 
-.our-clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.our-clients-list__link {
+  @extend %flex-align-justify;
+
   width: 100%;
   height: 100%;
 

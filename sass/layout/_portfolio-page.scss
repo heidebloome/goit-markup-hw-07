@@ -38,19 +38,17 @@
   }
 }
 
-.portfolio-overlay {
+.portfolio-list-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(101%);
+  transform: translateY(100%);
 
   width: 100%;
   height: 100%;
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
+  @include font(18px, 1.555, 0.03em);
 
   color: var(--white-color);
   background-color: var(--accent-color-opacity90);
@@ -75,15 +73,11 @@
   margin-bottom: 4px;
 
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 0.06em);
 
   color: var(--heading-text-color);
 }
 
 .portfolio-list__description {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.875, 0.03em);
 }

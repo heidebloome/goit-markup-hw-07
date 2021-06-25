@@ -1,8 +1,8 @@
-.our-works__list {
+.our-works-list {
   display: flex;
 }
 
-.our-works__item {
+.our-works-list__item {
   flex-basis: calc((100% - 60px) / 3);
 
   &:not(:last-child) {
@@ -10,8 +10,9 @@
   }
 }
 
-.our-works__description {
+.our-works-list__description {
   position: absolute;
+  left: 0;
   bottom: 0;
 
   width: 100%;
@@ -20,10 +21,8 @@
   padding-bottom: 27px;
 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
+  @include font(14px, 1.143, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   background-color: var(--background-our-works-overlay);

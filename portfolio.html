@@ -60,37 +60,37 @@
     <main>
       <section class="section portfolio">
         <div class="container">
-          <h2 class="portfolio-main-title visually-hidden">Портфолио</h2>
+          <h2 class="portfolio__title visually-hidden">Портфолио</h2>
 
-          <ul class="list portfolio-buttons">
+          <ul class="portfolio-buttons">
             <li class="portfolio-buttons__item">
               <button
                 type="button"
-                class="portfolio-buttons__button portfolio-buttons__button--first"
+                class="button portfolio-buttons__button portfolio-buttons__button--first"
               >
                 Все
               </button>
             </li>
             <li class="portfolio-buttons__item">
-              <button type="button" class="portfolio-buttons__button">Веб-сайты</button>
+              <button type="button" class="button portfolio-buttons__button">Веб-сайты</button>
             </li>
             <li class="portfolio-buttons__item">
-              <button type="button" class="portfolio-buttons__button">Приложения</button>
+              <button type="button" class="button portfolio-buttons__button">Приложения</button>
             </li>
             <li class="portfolio-buttons__item">
-              <button type="button" class="portfolio-buttons__button">Дизайн</button>
+              <button type="button" class="button portfolio-buttons__button">Дизайн</button>
             </li>
             <li class="portfolio-buttons__item">
-              <button type="button" class="portfolio-buttons__button">Маркетинг</button>
+              <button type="button" class="button portfolio-buttons__button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list portfolio-list">
+          <ul class="portfolio-list">
             <li class="portfolio-list__item">
               <a href="" class="link portfolio-list__link">
                 <div class="thumb">
                   <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" height="294" />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -111,7 +111,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -132,7 +132,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -148,7 +148,7 @@
               <a href="" class="link portfolio-list__link">
                 <div class="thumb">
                   <img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" height="294" />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -164,7 +164,7 @@
               <a href="" class="link portfolio-list__link">
                 <div class="thumb">
                   <img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" height="294" />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -185,7 +185,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -206,7 +206,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -222,7 +222,7 @@
               <a href="" class="link portfolio-list__link">
                 <div class="thumb">
                   <img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" height="294" />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -243,7 +243,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-overlay">
+                  <p class="portfolio-list-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
@@ -266,42 +266,46 @@
           <a href="./index.html" class="logo footer__logo"
             >Web<span class="footer__logo--color-white">Studio</span></a
           >
+
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="list contact-list">
-            <li class="contact-list-item">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+
+          <ul class="footer-contacts">
+            <li class="footer-contacts__item">
+              <a href="mailto:info@devstudio.com" class="footer-contacts__link"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="contact-list-item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <li class="footer-contacts__item">
+              <a href="tel:+380961111111" class="footer-contacts__link">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="social-links-box">
-          <h2 class="title">Присоединяйтесь</h2>
-          <ul class="list social-list">
+        <div class="social-box">
+          <h2 class="footer__title">Присоединяйтесь</h2>
+          <ul class="social-list">
             <li class="social-list__item">
-              <a href="" class="link social-list__link">
+              <a href="" class="social-list__link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="link social-list__link">
+              <a href="" class="social-list__link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="link social-list__link">
+              <a href="" class="social-list__link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="link social-list__link">
+              <a href="" class="social-list__link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -309,13 +313,13 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p class="subscribe__title">Подпишитесь на рассылку</p>
-          <form class="subscribe__form">
+        <div class="subscribe-box">
+          <p class="footer__title">Подпишитесь на рассылку</p>
+          <form class="subscribe-form">
             <label>
-              <input type="email" name="email" class="subscribe__input" placeholder="E-mail" />
+              <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail" />
             </label>
-            <button type="submit" class="subscribe__button">
+            <button type="submit" class="button subscribe-form__button">
               Подписаться
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
